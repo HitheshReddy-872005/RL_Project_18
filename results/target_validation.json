@@ -1,0 +1,40 @@
+{
+  "arch": "convnet",
+  "train_size": 10000,
+  "epochs": 20,
+  "test_size": 10000,
+  "results": [
+    {
+      "config": "heuristic (flip+crop)",
+      "policy": null,
+      "test_accuracy": 0.7993,
+      "seconds": 306.7
+    },
+    {
+      "config": "heuristic + rl best policy",
+      "policy": {
+        "op1": "ShearY",
+        "prob1": 0.9,
+        "mag1": 2,
+        "op2": "Contrast",
+        "prob2": 0.9,
+        "mag2": 1
+      },
+      "test_accuracy": 0.7937,
+      "seconds": 346.5
+    },
+    {
+      "config": "heuristic + random best policy",
+      "policy": {
+        "op1": "Contrast",
+        "prob1": 0.7,
+        "mag1": 0,
+        "op2": "Posterize",
+        "prob2": 0.9,
+        "mag2": 4
+      },
+      "test_accuracy": 0.7933,
+      "seconds": 365.1
+    }
+  ]
+}

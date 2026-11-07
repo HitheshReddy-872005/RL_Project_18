@@ -1,0 +1,14 @@
+{
+  "mode": "random",
+  "reference_no_aug": 0.467,
+  "best_episode": 45,
+  "best_reward": 0.489,
+  "best_policy": {
+    "op1": "Contrast",
+    "prob1": 0.7,
+    "mag1": 0,
+    "op2": "Posterize",
+    "prob2": 0.9,
+    "mag2": 4
+  }
+}
